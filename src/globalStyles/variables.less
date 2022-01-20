@@ -1,0 +1,28 @@
+@import "./colors.less";
+
+@header-height: 64px;
+@fw-medium    : 500;
+@fw-bold      : 700;
+@fw-regular   : 400;
+@b-radius     : 10px;
+@h-component  : 40px;
+
+.shadow() {
+    box-shadow: 0 1px 6px 3px rgba(51, 51, 51, 0.1);
+}
+
+.gradiant() {
+    background-image: linear-gradient(to left, @menuGreenGradiant2, @menuGreenGradiant1);
+}
+
+.gradiantMain() {
+    background-image: linear-gradient(to top, @gradientColorOne, @gradientColorTwo);
+}
+
+.gradiantMain2() {
+    background-image: linear-gradient(to top,  @gradientColorOne, @gradientColorTwo , #bc53cf);
+}
+
+.shadowMain() {
+    box-shadow: 0 3px 6px fade(#000, 16%);
+}

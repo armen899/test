@@ -1,0 +1,21 @@
+.navItem {
+  &__icon {
+    svg {
+      path {
+        fill: var(--mainDark);
+      }
+    }
+  }
+
+  &.active {
+    .navItem {
+      &__icon {
+        svg {
+          path {
+            fill: var(--main);
+          }
+        }
+      }
+    }
+  }
+}

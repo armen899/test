@@ -1,0 +1,30 @@
+
+.ant-btn:not(ant-btn){
+  border-radius: 14px;
+  border: none;
+  background-color: var( --btn);
+  height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover{
+    background-color: var(--btnHover);
+    color: var(--white);
+  }
+  &:focus{
+    box-shadow: none;
+    outline: none !important;
+   }
+}
+.ant-btn-primary:not(ant-btn-primary){
+  background-color: var(--btnPrimary);
+  color: var(--white);
+  &:hover{
+    background-color: var(--btnPrimaryHover);
+    color: var(--white);
+  }
+
+}
+

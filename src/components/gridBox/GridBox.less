@@ -1,0 +1,36 @@
+.gridBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 15px;
+  width: 100%;
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--black);
+    margin-bottom: 15px;
+    margin-left: 5px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .outter {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and(min-width: 800px) {
+  .gridBox {
+    flex-direction: row;
+    ul {
+      flex-direction: row;
+    }
+  }
+}

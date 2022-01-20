@@ -1,0 +1,51 @@
+.appHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  background: var(--headerBg);
+  height: 60px;
+
+  &__pageTitle {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  &__userDropdown {
+    &--btn {
+      border: none !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      .ant-avatar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f3f4f8;
+        height: 31px;
+        width: 31px;
+      }
+    }
+  }
+  
+  a{
+    display: flex;
+    align-items: center;
+    .anticon{
+      width: 30px;
+      svg{
+        color: var(--statsTitle);
+        cursor: pointer;
+        width: 18px;
+        height: 18px;
+      }
+      &:hover{
+        background-color: var(--light-gray);
+        width: 30px;
+        height: 30px;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    } 
+  }
+}
